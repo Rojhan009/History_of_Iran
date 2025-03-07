@@ -1,0 +1,61 @@
+/* استایل‌های عمومی */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* دارک مود */
+body.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+header.dark-mode {
+    background-color: #111;
+}
+
+footer.dark-mode {
+    background-color: #111;
+}
