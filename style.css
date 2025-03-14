@@ -1,95 +1,76 @@
+/* استایل اولیه */
 body {
-    font-family: 'Tahoma', sans-serif;
-    text-align: right;
-    direction: rtl;
-    background-color: #fff;
-    color: #000;
+    font-family: Tahoma, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #f1f1f1;
-    padding: 20px;
-    text-align: center;
-}
-
-#theme-toggle button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-main {
-    padding: 20px;
-}
-
 h1, h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 h2 {
-    font-size: 28px;
-    margin-top: 20px;
+    font-size: 24px;
 }
 
 p {
-    font-size: 16px;
     line-height: 1.6;
+    text-align: justify;
+    margin: 10px 20px;
 }
 
-ul {
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* فهرست مطالب */
+#table-of-contents {
+    margin: 20px;
+}
+
+#table-of-contents ul {
     list-style-type: none;
     padding: 0;
 }
 
-ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    color: #000;
-}
-
-ul li a:hover {
-    color: #007BFF;
-}
-
-.map-img {
-    width: 100%;
-    max-width: 600px;
-    display: block;
+#table-of-contents li {
     margin: 10px 0;
 }
 
-.history-img {
-    width: 200px;
-    display: block;
-    margin: 10px 0;
+/* تصویر */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
 }
 
-#theme-toggle button:focus {
-    outline: none;
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Dark Mode Styles */
+/* دارک مود */
 body.dark-mode {
-    background-color: #333;
+    background-color: #121212;
     color: #fff;
 }
 
-body.dark-mode header {
-    background-color: #444;
+button {
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
 }
 
-body.dark-mode h1, body.dark-mode h2 {
-    color: #fff;
-}
-
-body.dark-mode ul li a {
-    color: #fff;
-}
-
-body.dark-mode ul li a:hover {
-    color: #FFD700;
+button:hover {
+    background-color: #ffb300;
 }
