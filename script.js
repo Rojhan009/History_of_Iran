@@ -1,15 +1,11 @@
-const moonIcon = document.getElementById('moon-icon');
-const sunIcon = document.getElementById('sun-icon');
-const body = document.body;
+// انتخاب دکمه و تغییر دارک مود
+const darkModeBtn = document.getElementById("dark-mode-btn");
 
-moonIcon.addEventListener('click', () => {
-    body.classList.add('dark-mode');
-    moonIcon.style.display = 'none';
-    sunIcon.style.display = 'block';
-});
-
-sunIcon.addEventListener('click', () => {
-    body.classList.remove('dark-mode');
-    sunIcon.style.display = 'none';
-    moonIcon.style.display = 'block';
+darkModeBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeBtn.textContent = "🌞"; // خورشید برای روشنایی
+    } else {
+        darkModeBtn.textContent = "🌙"; // ماه برای دارک مود
+    }
 });
