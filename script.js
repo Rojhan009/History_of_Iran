@@ -1,11 +1,13 @@
-// انتخاب دکمه و تغییر دارک مود
-const darkModeBtn = document.getElementById("dark-mode-btn");
+// فعال‌سازی دارک مود
+const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-darkModeBtn.addEventListener("click", function () {
+darkModeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
+
+    // تغییر آیکون ماه/خورشید
     if (document.body.classList.contains("dark-mode")) {
-        darkModeBtn.textContent = "🌞"; // خورشید برای روشنایی
+        darkModeToggle.textContent = "🌞";
     } else {
-        darkModeBtn.textContent = "🌙"; // ماه برای دارک مود
+        darkModeToggle.textContent = "🌙";
     }
 });
