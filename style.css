@@ -101,3 +101,18 @@ body {
     color: #f0f0f0; /* متن روشن */
     border: 1px solid #444; /* حاشیه برای جداسازی بهتر */
 }
+/* لینک‌ها در حالت عادی */
+.sidebar a {
+    color: #0066cc; /* آبی استاندارد */
+    text-decoration: none;
+}
+
+/* لینک‌ها در دارک مود */
+.dark-mode .sidebar a {
+    color: #4da6ff; /* آبی روشن‌تر برای خوانایی بهتر */
+}
+
+/* تغییر رنگ لینک هنگام هاور */
+.sidebar a:hover {
+    text-decoration: underline;
+}
