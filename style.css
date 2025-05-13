@@ -81,3 +81,9 @@ button:hover {
 .dark-mode .navbar {
     background-color: #1e1e1e !important;
 }
+body {
+    direction: rtl;
+    text-align: right;
+    margin: 0 10%; /* فاصله از چپ و راست */
+    line-height: 1.8; /* فاصله بین خطوط */
+}
