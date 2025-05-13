@@ -87,3 +87,17 @@ body {
     margin: 0 10%; /* فاصله از چپ و راست */
     line-height: 1.8; /* فاصله بین خطوط */
 }
+/* حالت عادی (لایت مود) */
+.sidebar {
+    background-color: #f8f9fa; /* رنگ روشن */
+    color: #333; /* متن تیره */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* حالت دارک مود */
+.dark-mode .sidebar {
+    background-color: #2d2d2d; /* رنگ تیره */
+    color: #f0f0f0; /* متن روشن */
+    border: 1px solid #444; /* حاشیه برای جداسازی بهتر */
+}
